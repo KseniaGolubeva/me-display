@@ -1,0 +1,45 @@
+{
+  "name": "me-display",
+  "version": "0.1.3",
+  "description": "This component translates a string with LaTeX formulas into html code.",
+  "author": {
+    "name": "Ksenia"
+  },
+  "repository": "",
+  "bugs": "",
+  "license": "MIT",
+  "keywords": [
+    "Vue2",
+    "KaTeX",
+    "LaTeX"
+  ],
+  "type": "module",
+  "private": false,
+  "main": "./dist/MEDisplay.umd.js",
+  "module": "./dist/MEDisplay.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/MEDisplay.es.js",
+      "require": "./dist/MEDisplay.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "katex": "^0.16.7",
+    "vue": "^2.7.7",
+    "vue-katex": "^0.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^1.1.2",
+    "terser": "^5.14.2",
+    "vite": "^3.0.2"
+  }
+}
